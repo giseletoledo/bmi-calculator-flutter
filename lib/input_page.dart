@@ -10,54 +10,71 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
+    const activeCardColor = Color(0xFF1D1E33);
+    const bottomContainerColor = Color(0xFFEB1555);
+
     double height = MediaQuery.of(context).size.height;
+    double horizontalBoxHeight = height * 0.10;
 
-    double verticalBoxWidth = width * 0.40;
-    double verticalBoxHeight = height * 0.27;
-
-    double horizontalBoxWidth = width * 0.80;
-    double horizontalBoxHeight = height * 0.30;
+    double width = MediaQuery.of(context).size.width;
+    double horizontalBoxWidth = width * 1;
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text('BMI CALCULATOR'),
       ),
       body: Column(
         children: <Widget>[
           Expanded(
             child: Row(
-              children: const <Widget>[
+              children: <Widget>[
                 Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    colour: activeCardColor,
+                  ),
                 ),
                 Expanded(
-                  child: ReusableCard(),
-                ),
-              ],
-            ),
-          ),
-          Expanded(
-            child: Row(
-              children: const <Widget>[
-                Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    colour: activeCardColor,
+                  ),
                 ),
               ],
             ),
           ),
           Expanded(
             child: Row(
-              children: const <Widget>[
+              children: <Widget>[
                 Expanded(
-                  child: ReusableCard(),
-                ),
-                Expanded(
-                  child: ReusableCard(),
+                  child: ReusableCard(
+                    colour: activeCardColor,
+                  ),
                 ),
               ],
             ),
           ),
+          Expanded(
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: ReusableCard(
+                    colour: activeCardColor,
+                  ),
+                ),
+                Expanded(
+                  child: ReusableCard(
+                    colour: activeCardColor,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            color: bottomContainerColor,
+            margin: const EdgeInsets.only(top: 10.0),
+            width: horizontalBoxWidth,
+            height: horizontalBoxHeight,
+          )
         ],
       ),
     );
@@ -65,16 +82,19 @@ class _InputPageState extends State<InputPage> {
 }
 
 class ReusableCard extends StatelessWidget {
-  const ReusableCard({
-    Key? key,
-  }) : super(key: key);
+  ReusableCard({Key? key, required this.colour, this.cardChild})
+      : super(key: key);
+
+  final Color colour;
+  final Widget? cardChild;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      child: cardChild,
       margin: const EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: const Color(0xFF1D1E33),
+        color: colour,
         borderRadius: BorderRadius.circular(15.0),
       ),
     );
