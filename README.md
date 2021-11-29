@@ -8,7 +8,7 @@ App que calcula o índice de massa corporal, desenvolvido para praticar layout e
 
 <img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Simulator_Screen%20Shot_Phone_13_tela2.png" width="30%" height="30%" alt="Segunda tela ao clicar no botão de calcular o bmi"/>
 
-<img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Tela_horizontal_app_bmi.png" width="70%" height="70%" alt="Segunda tela ao clicar no botão de calcular o bmi"/>
+<img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Tela_horizontal_app_bmi.png" width="65%" height="65%" alt="Segunda tela ao clicar no botão de calcular o bmi"/>
 </div>
 
 Agradecimento ao fórum e mentoria da Academia do Flutter, por tirar dúvidas sobre null safety.
