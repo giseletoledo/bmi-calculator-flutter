@@ -25,54 +25,56 @@ class ResultsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('BMI CALCULATOR'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.all(15.0),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(25.0),
               alignment: Alignment.bottomLeft,
               child: const Text(
                 'Your Result',
                 style: titleTextStyle,
               ),
             ),
-          ),
-          Expanded(
-            flex: 5,
-            child: ReusableCard(
+            ReusableCard(
+              widthContainer: width * 0.8,
+              heightContainer: height * 0.56,
               colour: activeCardColor,
-              cardChild: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    resultText == null ? '' : resultText!.toUpperCase(),
-                    style: resultTextStyle,
-                  ),
-                  Text(
-                    bmiResult == null ? '' : bmiResult!,
-                    style: bMITextStyle,
-                  ),
-                  Text(
-                    interpretation == null ? '' : interpretation!,
-                    textAlign: TextAlign.center,
-                    style: bodyTextStyle,
-                  ),
-                ],
+              cardChild: Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      resultText == null ? '' : resultText!.toUpperCase(),
+                      style: resultTextStyle,
+                    ),
+                    Text(
+                      bmiResult == null ? '' : bmiResult!,
+                      style: bMITextStyle,
+                    ),
+                    Text(
+                      interpretation == null ? '' : interpretation!,
+                      textAlign: TextAlign.center,
+                      style: bodyTextStyle,
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-          BottomButton(
-            buttonTitle: 'RE-CALCULATE',
-            onTap: () {
-              Navigator.pop(context);
-            },
-            horizontalBoxHeight: horizontalBoxHeight,
-            horizontalBoxWidth: horizontalBoxWidth,
-          )
-        ],
+            BottomButton(
+              buttonTitle: 'RE-CALCULATE',
+              onTap: () {
+                Navigator.pop(context);
+              },
+              horizontalBoxHeight: horizontalBoxHeight,
+              horizontalBoxWidth: horizontalBoxWidth,
+            )
+          ],
+        ),
       ),
     );
   }

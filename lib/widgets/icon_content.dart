@@ -14,13 +14,14 @@ class IconContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
       children: <Widget>[
         Icon(
           icon,
           size: horizontalBoxHeight,
         ),
         const SizedBox(
-          height: 15.0,
+          height: 5.0,
         ),
         Text(
           label ?? '',
