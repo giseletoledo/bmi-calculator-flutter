@@ -6,6 +6,8 @@ App que calcula o índice de massa corporal, desenvolvido para praticar layout e
 
 <p align="center"><img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Simulator_Screen%20Shot_Phone_13_tela2.png" width="30%" height="30%"/></p>
 
+Agradecimento ao fórum e mentoria da Academia do Flutter, por tirar dúvidas sobre null safety.
+
 ### Projeto original do Bootcamp Flutter
 https://github.com/londonappbrewery/BMI-Calculator-Flutter-Completed
 
