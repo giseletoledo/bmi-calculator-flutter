@@ -4,9 +4,9 @@ const activeCardColor = Color(0xFF1D1E33);
 const inactiveCardColor = Color(0xFF111328);
 const bottomContainerColor = Color(0xFFEB1555);
 
-const LabelTextStyle = TextStyle(fontSize: 18.0, color: Color(0xFF8D8E98));
+const labelTextStyle = TextStyle(fontSize: 18.0, color: Color(0xFF8D8E98));
 
-const NumberTextStyle = TextStyle(
+const numberTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
 );
@@ -18,4 +18,27 @@ const activeTrackColorSlider = Colors.white;
 
 const overlayColorSlider = Color(0x29EB1555);
 
-const RoundIconButtonColor = Color(0xFF4C4F5E);
+const roundIconButtonColor = Color(0xFF4C4F5E);
+
+const largeButtonTextStyle =
+    TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold);
+
+const titleTextStyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
+
+const resultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);
+
+const bMITextStyle = TextStyle(
+  fontSize: 100.0,
+  fontWeight: FontWeight.bold,
+);
+
+const bodyTextStyle = TextStyle(
+  fontSize: 22.0,
+);
