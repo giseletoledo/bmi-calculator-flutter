@@ -2,7 +2,7 @@
 
 App que calcula o índice de massa corporal, desenvolvido para praticar layout e null safety, já que a versão original foi criada antes do Flutter 2.0.
 
-<div align="center"><img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Simulator_Screen%20Shot_Phone_13_tela1.png" width="30%" height="30%"/>
+<div><img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Simulator_Screen%20Shot_Phone_13_tela1.png" width="30%" height="30%"/>
 
 <img src="https://github.com/gisesma/bmicalculatorflutter/blob/main/Simulator_Screen%20Shot_Phone_13_tela2.png" width="30%" height="30%"/></div>
 
