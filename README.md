@@ -5,6 +5,25 @@ App que calcula o índice de massa corporal, desenvolvido para praticar layout e
 ## Stacks
 - Flutter - **environment sdk: >=2.12.0 <3.0.0**
 
+## Estrutura
+
+```lib
+
+|   calculator_brain.dart
+|   constants.dart
+|   main.dart
+|   
++---screens
+|       input_page.dart
+|       results_page.dart
+|       
+\---widgets
+        bottom_button.dart
+        icon_content.dart
+        reusable_card.dart
+        round_icon_button.dart
+ ```
+
 Clonando o repositório:
 
 ```
