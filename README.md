@@ -1,6 +1,27 @@
 # BMI Calculator Flutter
 
-App que calcula o índice de massa corporal, desenvolvido para praticar layout e null safety, já que a versão original foi criada antes do Flutter 2.0.
+App que calcula o índice de massa corporal, desenvolvido para praticar layout e null safety, já que a versão original foi criada antes da atualização do Flutter e o acréscimo desse recurso.
+
+## Stacks
+- Flutter - **environment sdk: >=2.12.0 <3.0.0**
+
+Clonando o repositório:
+
+```
+$ git clone https://github.com/gisesma/movie-app
+```
+
+Baixar as dependências do projeto:
+
+```
+$ flutter pub get
+```
+
+Para rodar o app, digitar o comando na linha de comando, dentro do diretório raiz do app:
+
+```
+$ flutter run
+```
 
 
 <div float="left">
