@@ -8,7 +8,7 @@ App que calcula o índice de massa corporal, desenvolvido para praticar layout e
 Clonando o repositório:
 
 ```
-$ git clone https://github.com/gisesma/movie-app
+$ git clone https://github.com/gisesma/bmicalculatorflutter
 ```
 
 Baixar as dependências do projeto:
